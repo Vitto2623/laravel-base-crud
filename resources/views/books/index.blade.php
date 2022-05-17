@@ -10,7 +10,9 @@
                         <div class="card m-5 p-2" style="width: 18rem;">
                             <img src="{{$book->thumb}}" class="card-img-top" alt="image-book">
                             <div class="card-body my-body">
-                                <h5 class="card-title">{{$book->title}}</h5>
+                                    <h5 class="card-title"> 
+                                        <a href="{{route('books.show', $book->id)}}">{{$book->title}}</a>
+                                    </h5>
                                 <p class="card-text">{{$book->description}}</p>
                             </div>
                             <ul class="list-group list-group-flush">
