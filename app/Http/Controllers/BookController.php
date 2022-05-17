@@ -24,7 +24,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
+        return view('books.create');
     }
 
     /**
@@ -35,7 +35,19 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $book = new Book();
+        $book->title = $data['title'];
+        $book->description = $data['description'];
+        $book->thumb = $data['thumb'];
+        $book->price = $data['price'];
+        $book->series = $data['series'];
+        $book->sale_date = $data['sale_date'];
+        $book->type = $data['type'];
+        $book->save();
+
+        return redirect()->route('books.show', $book);
     }
 
     /**

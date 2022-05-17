@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', ' - Book detail')
+
 @section('content')
     <main>
         <div class="container-fluid">
