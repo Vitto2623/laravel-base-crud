@@ -3,7 +3,7 @@
 @section('title', ' - Book detail')
 
 @section('content')
-    <main>
+    <main style="height: 1500px;">
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-items-center p-5">
                     <div class="col-12 d-flex justify-content-center align-items-center m-0">

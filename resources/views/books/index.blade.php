@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center mt-5">
                     <a href="{{route('books.create')}}">
-                        <button class="btn btn-warning p-3 m-0 fs-4">Aggiugni un nuovo fumetto</button>
+                        <button class="btn btn-warning p-3 m-0 fs-4">Aggiungi un nuovo fumetto</button>
                     </a>
                 </div>
             </div>
