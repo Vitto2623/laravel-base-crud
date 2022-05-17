@@ -4,16 +4,25 @@
 
     <main>
         <div class="container-fluid">
-            <div class="row text-center d-flex justify-content-center align-items-center p-5">
+            <div class="row d-flex justify-content-center align-items-center p-5">
+                @foreach ($books as $book)
                     <div class="col-5 d-flex justify-content-center align-items-center m-0">
-                        <div class="card my-card m-3">
-                            <div class="card-body">
-                                
+                        <div class="card m-5 p-2" style="width: 18rem;">
+                            <img src="{{$book->thumb}}" class="card-img-top" alt="image-book">
+                            <div class="card-body my-body">
+                                <h5 class="card-title">{{$book->title}}</h5>
+                                <p class="card-text">{{$book->description}}</p>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Price: {{$book->price}}$</li>
+                                <li class="list-group-item"> Title: {{$book->series}}</li>
+                                <li class="list-group-item">Date: {{$book->sale_date}}</li>
+                                <li class="list-group-item"> Type: {{$book->type}}</li>
+                            </ul>
                         </div>
                     </div>
+                @endforeach
             </div>
         </div>
     </main>
-    
 @endsection
