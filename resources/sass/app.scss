@@ -1,7 +1,25 @@
 //
 @import "~bootstrap/scss/bootstrap";
 
+
+.my-card:hover{
+    background-color: yellow;
+    cursor: pointer;
+    
+}
+
 .my-body{
     height: 20rem;
     overflow: scroll;
+}
+
+.special-link{
+    color: black;
+    &:hover{
+        color: yellow;
+    }
+}
+
+main{
+    background-color: rgb(32, 31, 31);
 }

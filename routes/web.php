@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('/', 'BookController');
+
 Route::resource('books', 'BookController');

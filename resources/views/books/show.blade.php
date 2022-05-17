@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-items-center p-5">
                     <div class="col-12 d-flex justify-content-center align-items-center m-0">
-                        <div class="card m-5 p-2" style="width: 18rem;">
+                        <div class="card m-5 p-2 my-card" style="width: 18rem;">
                             <img src="{{$book->thumb}}" class="card-img-top" alt="image-book">
                             <div class="card-body my-body">
                                 <h5 class="card-title">{{$book->title}}</h5>
